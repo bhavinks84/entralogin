@@ -7,7 +7,6 @@
 | Platform | Script | Guide |
 |----------|--------|-------|
 | **Windows Server 2016 / 2019 / 2022** | `deploy.ps1` | [Windows Server Deployment](#windows-server-deployment) (this page, §A) |
-| **Ubuntu 20.04 / 22.04 / 24.04 · Debian 11 / 12** | `deploy.sh` | [Linux Deployment](#linux-deployment) (this page, §B) |
 
 ---
 
