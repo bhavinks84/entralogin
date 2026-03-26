@@ -1,0 +1,23 @@
+# ── Runtime-generated ────────────────────────────────────────────
+node_modules/
+frontend/dist/
+backend/dist/
+
+# ── Secrets / environment ─────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Logs ─────────────────────────────────────────────────────────
+*.log
+deploy.log
+
+# ── OS / editor noise ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ── PM2 / deployment artifacts ────────────────────────────────────
+.pm2/
