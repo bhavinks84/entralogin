@@ -24,7 +24,7 @@ Copy the `EntraLogin` project folder to the server via RDP file-copy, SCP, or yo
 Or use Git in PowerShell:
 
 ```powershell
-git clone https://github.com/your-org/entralogin.git C:\deploy\entralogin
+git clone https://github.com/bhavinks84/entralogin.git C:\deploy\entralogin
 cd C:\deploy\entralogin
 ```
 
