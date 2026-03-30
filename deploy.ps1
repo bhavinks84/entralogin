@@ -302,7 +302,7 @@ $timestamp = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
     "EMAIL_FROM_NAME=$EmailName",
     "EMAIL_FROM_ADDRESS=$EmailFrom"
 )
-$envLines | Set-Content $EnvFile -Encoding UTF8
+[System.IO.File]::WriteAllLines($EnvFile, $envLines, [System.Text.UTF8Encoding]::new($false))
 
 # Restrict file to current user only (no Everyone / BUILTIN\Users)
 $acl = Get-Acl $EnvFile
