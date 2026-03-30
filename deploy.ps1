@@ -348,7 +348,7 @@ $nginxConf = $nginxConf -replace '__DOMAIN__',        $Domain
 $nginxConf = $nginxConf -replace '__NGINX_PORT__',    $NginxPort
 $nginxConf = $nginxConf -replace '__FRONTEND_DIST__', $FrontendDistFwd
 $nginxConf = $nginxConf -replace '__BACKEND_PORT__',  $ApiPort
-Set-Content "$NGINX_DIR\conf\nginx.conf" $nginxConf -Encoding UTF8
+[System.IO.File]::WriteAllText("$NGINX_DIR\conf\nginx.conf", $nginxConf, [System.Text.UTF8Encoding]::new($false))
 
 # Validate config syntax
 $testResult = & "$NGINX_DIR\nginx.exe" -p $NGINX_DIR -t 2>&1
